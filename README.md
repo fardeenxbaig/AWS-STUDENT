@@ -1,4 +1,4 @@
-# AWS-STUDENT
+# AWS [AWS](http://3.145.116.148/index.php)
 
 ### 1. Describe basic aspects of AWS Elastic Compute Cloud.
 
@@ -23,5 +23,27 @@ Once you are logged in into AWS Console, you can follow this series of steps
 6. Next you need to select no. of instances or they should be auto-scaled, and also you need to select appropriate Subnets,  Network and other configuration.
 7. Next you can add storage to your VM, how much storage you require.
 8. Next you can add any Tags if you want.
-9. You can select a security group for your instance so as to set rules for it, basically who'll access the EC2 and from where all   the restrictions.
+9. You can select a security group for your instance so as to set rules for it, basically who'll access the EC2 and from where all   the restrictions. And download the key pair for you instances.
 10. And finally after reviewing the configurations you choose you can create the instance it'll be ready within few mins.
+
+### 3. How to install an Apache webserver on AWS EC2 Instance.
+
+To install Apache server on EC2 instance.
+
+You need to login into your EC2 instance, you can use AWS cloudshell or linux terminal or Putty in Windows.
+You can do SSH into your instance with the helps of key pair generated during the creation of EC2 instance, and when you have successfully logged in you can execute these series of commands to install server
+
+*Installation of Apache webserver*
+
+> ***sudo yum install -y httpd***
+
+*Startig the webserver*
+
+> ***sudo systemctl start httpd***
+
+*Configuring to start server whenever system boots up*
+
+> ***sudo systemctl enable httpd***
+
+
+### 4. How we can connect an AWS EC2 instance to a MySQL server database.
