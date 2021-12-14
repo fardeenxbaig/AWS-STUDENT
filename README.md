@@ -69,6 +69,10 @@ Basically the website at `http://3.145.116.148` will let you add the student rec
 Once you fill the records and hit the update button, it'll greet you with the Successfully Added data page, and Mainpage is the one which stores the code related to adding records into the Database it is stored in EC2 /var/www/html
 Database info is stored in a individual file located at /var/www/inc in a file named dbinfo.inc
 
+
+![WEBSITE](https://user-images.githubusercontent.com/32818733/146018109-83654862-1bb7-4910-9762-2216c10baac4.png)
+
+
 ### 7. What are the key factors to keep in mind during the process?
 
 - Apache server should be properly installed to be able to host the Website
