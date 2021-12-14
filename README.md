@@ -1,4 +1,4 @@
-# AWS [AWS](http://3.145.116.148/index.php)
+# [AWS](http://3.145.116.148/index.php)
 
 ### 1. Describe basic aspects of AWS Elastic Compute Cloud.
 
@@ -47,3 +47,37 @@ You can do SSH into your instance with the helps of key pair generated during th
 
 
 ### 4. How we can connect an AWS EC2 instance to a MySQL server database.
+
+You can connect your EC2 instance to Server database,
+
+First is, you can keep your instance as well as RDS DB on same VPC and configure the subnets for the same.
+You need to set the appropriate inbound/outbound rules basically the security group should be well configured to be able to establish a connection between ec2 and server database.
+Now you can SSH into your EC2 instance and using the endpoint and port and credentials of the database you can work on you database.
+
+Other one is, you can install Apache server, PHP on you EC2 instance, and use PHP to connect to the MySql database server, you just need to create a configuration file dbinfo.inc so as to specify the details of database you want to connect, you need to include Endpoint, port no. and credentials to be able to connect the EC2 with your Database.
+
+### 5. How to connect a domain to your website using Route 53.
+
+> -Get your current DNS configuration of your domain from DNS provider.
+> -You need to create hosted zone and also create records(website.com or www.website.com)
+> -You need to setup the name server with route 53 name servers
+> -Transfer domain registration to Route 53  
+
+### 6. Demonstrate the hosted website
+
+Basically the website at `http://3.145.116.148` will let you add the student records to RDS DB, it is hosted on AWS EC2.
+Once you fill the records and hit the update button, it'll greet you with the Successfully Added data page, and Mainpage is the one which stores the code related to adding records into the Database it is stored in EC2 /var/www/html
+Database info is stored in a individual file located at /var/www/inc in a file named dbinfo.inc
+
+### 7. What are the key factors to keep in mind during the process?
+
+- Apache server should be properly installed to be able to host the Website
+- Security groups for EC2 instance and RDS DB should be setup properly in order to only allow limited access to required personnel.
+- You need to keep safe your EC2 instance Key Pair which is used to do SSH into Instance.
+- Inbound/Outbound rules should be properly setup so the outer world has access to website and don't have access to RDB DB
+- You need to ensure that you only build that instance which is of most use to you and not under utilize  or waste any computing power, causing you extra money.
+- Maintenance and backups should be scheduled period-wise to ensure efficiency of Website.
+
+### 8. Clean up the project environment and avoid future costs.
+
+As soon as your work is done or the instance is not needed you can terminate the instance to avoid any future costs.
