@@ -26,6 +26,9 @@ Once you are logged in into AWS Console, you can follow this series of steps
 9. You can select a security group for your instance so as to set rules for it, basically who'll access the EC2 and from where all   the restrictions. And download the key pair for you instances.
 10. And finally after reviewing the configurations you choose you can create the instance it'll be ready within few mins.
 
+![Instance](https://user-images.githubusercontent.com/32818733/146018520-a6ff066f-1888-4705-8e44-4518ea5de2c3.png)
+
+
 ### 3. How to install an Apache webserver on AWS EC2 Instance.
 
 To install Apache server on EC2 instance.
