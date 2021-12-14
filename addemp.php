@@ -9,7 +9,7 @@
 			<h2>Following Student has been added to the database</h2><br>
 			<h2>ADDED</h2><br>
 			<title>Add Emp Output</title>
-				<form action="http://3.145.118.175/index.php" autocomplete="on" method = "GET">
+				<form action="http://3.145.116.148/index.php" autocomplete="on" method = "GET">
 
 					<button type="submit" style="background: grey; height: 45px; width: 200px; color:white; font:oblique;">GO BACK</button><br><br>
 

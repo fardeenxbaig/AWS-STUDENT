@@ -1,4 +1,3 @@
-//FOR THE MAIN INDEX PAGE//
 <!DOCTYPE html>
 <html>
 <head>
